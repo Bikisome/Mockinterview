@@ -9,6 +9,8 @@ import SignInPage from './routes/SignInPage'
 import SignUpPage from './routes/SignUpPage'
 import ProtectedRoutes from './layouts/ProtectedRoutes'
 import { MainLayout } from './layouts/MainLayout'
+import Generate from './components/Generate'
+import Dashboard from './routes/Dashboard'
 
 
 function App() {
@@ -37,6 +39,11 @@ function App() {
             </ProtectedRoutes>
           }
         >
+
+
+          <Route element={<Generate/>} path='/generate'>
+                <Route  index element={<Dashboard/>}/>
+                </Route>
           </Route>
       
         </Routes>
