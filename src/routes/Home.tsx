@@ -63,9 +63,11 @@ const HomePage = () => {
               distinctio natus, quos voluptatibus magni sapiente.
             </p>
 
-            <Button className="mt-3">
-              Generate <Sparkles />
-            </Button>
+            <Link to="/generate">
+              <Button className="mt-3">
+                Generate <Sparkles />
+              </Button>
+            </Link>
           </div>
         </div>
       </Container>

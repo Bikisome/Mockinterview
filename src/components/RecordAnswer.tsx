@@ -16,7 +16,7 @@ import { useParams } from "react-router-dom";
 import WebCam from "react-webcam";
 import { TooltipButton } from "./TooltipButton";
 import { toast } from "sonner";
-import chatSession from "@/scripts"
+import { chatSession } from "@/scripts";
 import { SaveModal } from "./SaveModal";
 import {
   addDoc,
