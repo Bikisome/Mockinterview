@@ -26,7 +26,6 @@ interface Achievement {
 }
 
 const AboutUsPage: React.FC = () => {
-  const [activeSection, setActiveSection] = useState<string>('mission');
 
   const teamMembers: TeamMember[] = [
     {
