@@ -3,11 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+   "scripts": {
+    "lint": "eslint . --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "build": "vite build", 
+    "dev": "vite" 
   },
   "dependencies": {
     "@clerk/clerk-react": "^5.23.0",
