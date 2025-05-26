@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Users, Target, Award, Heart, Star, Zap, TrendingUp, Globe, Shield, ArrowRight, Clock } from 'lucide-react';
 
 interface TeamMember {
