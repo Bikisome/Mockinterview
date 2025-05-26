@@ -28,9 +28,6 @@ jobs:
       - name: ✨ Lint
         run: npm run lint
 
-      # 👉 Inject env vars into Vite build
-      - name: 📥 Set environment variables
-        run: |
       - name: 📥 Set environment variables
         run: |
           echo "VITE_FIREBASE_API_KEY=${{ secrets.VITE_FIREBASE_API_KEY }}" >> .env
@@ -41,7 +38,6 @@ jobs:
           echo "VITE_FIREBASE_APP_ID=${{ secrets.VITE_FIREBASE_APP_ID }}" >> .env
           echo "VITE_FIREBASE_MEASUREMENT_ID=${{ secrets.VITE_FIREBASE_MEASUREMENT_ID }}" >> .env
           echo "VITE_GEMINI_API_KEY=${{ secrets.VITE_GEMINI_API_KEY }}" >> .env
-
 
       - name: 🏗️ Build with Vite
         run: npm run build
