@@ -5,7 +5,7 @@ interface Service {
   id: number;
   title: string;
   description: string;
-  icon: React.ComponentType<any>;
+  
   price: string;
   duration: string;
   features: string[];
@@ -17,7 +17,7 @@ interface Service {
 interface Stat {
   number: string;
   label: string;
-  icon: React.ComponentType<any>;
+  
 }
 
 interface Testimonial {
