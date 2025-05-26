@@ -14,7 +14,7 @@ interface Value {
   id: number;
   title: string;
   description: string;
-  icon: any;
+  
   color: string;
 }
 
@@ -22,7 +22,7 @@ interface Achievement {
   number: string;
   label: string;
   description: string;
-  icon: any;
+  
 }
 
 const AboutUsPage: React.FC = () => {
