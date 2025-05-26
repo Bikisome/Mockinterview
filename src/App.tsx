@@ -1,7 +1,7 @@
 
 import './App.css'
-import { Button } from "@/components/ui/button"
-import {BrowserRouter as Router, Route,Routes, Switch} from 'react-router-dom'
+// import { Button } from "@/components/ui/button"
+import {BrowserRouter as Router, Route,Routes} from 'react-router-dom'
 import { PublicLayout } from './layouts/PublickLayout'
 import Home from './routes/Home'
 import AuthenticationLayout from './layouts/AuthenticationLayout'

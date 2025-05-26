@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Users, Target, Award, Heart, CheckCircle, Star, Zap, TrendingUp, Globe, Shield, ArrowRight, Clock } from 'lucide-react';
+import { Users, Target, Award, Heart, Star, Zap, TrendingUp, Globe, Shield, ArrowRight, Clock } from 'lucide-react';
 
 interface TeamMember {
   id: number;
