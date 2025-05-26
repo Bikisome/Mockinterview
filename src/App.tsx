@@ -15,7 +15,9 @@ import { CreateEditPage } from './routes/CreateEditPage'
 import { MockLoadPage } from './routes/MockLoadPage'
 import { MockInterviewPage } from './routes/MockInterviewPage'
 import { Feedback } from './routes/Feedback'
-
+import ServicesPage from './routes/ServicesPage'
+import AboutUsPage from './routes/AboutUsPage'
+import ContactUsPage from './routes/ContactUsPage'
 
 function App() {
 
@@ -27,6 +29,9 @@ function App() {
           {/* publick routes */}
         <Route element={<PublicLayout />}>
         <Route index element={<Home />} />
+        <Route path='/services' element={<ServicesPage />} />
+        <Route path='/about' element={<AboutUsPage />} />
+        <Route path='/contact' element={<ContactUsPage />} />
         </Route>
 
         {/* authentication routes */}
@@ -54,6 +59,7 @@ function App() {
               element={<MockInterviewPage />}
             />
             <Route path="feedback/:interviewId" element={<Feedback />} />
+           
           </Route>
         </Route>
       </Routes>
